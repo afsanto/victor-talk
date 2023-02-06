@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VICTOR TALK</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="./images/favicon_victor.png" rel="shortcut icon" type="image/x-icon"/>
+</head>
+
+<body>
+
+    <div class="listing-card">
+        <div class="imageVideo">
+            <div class="image">
+                <div class="video">
+                    <video class="videoplay" preload="none" poster="images/Vi_capasem_gray.png">
+                      <source src="images/Victor_talk.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <h4>Victor Miyazaki </h4>
+            <p>Direção, Edição e Roteiro</p>
+            <a href="https://victormiyazaki.vercel.app/" class="btn-default">Aperte Aqui</a>
+        </div>
+    </div>
+
+    
+
+</body>
+
+<script>
+    
+    const clip = document.querySelectorAll(".videoplay");
+
+    for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener("mouseenter", function(e) {
+            clip[i].play();
+        })
+        clip[i].addEventListener("mouseout", function(e) {
+            clip[i].pause();
+        })
+    }
+
+    
+</script>
+
+
+
+</html>
